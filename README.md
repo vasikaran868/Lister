@@ -14,7 +14,7 @@ https://drive.google.com/file/d/1zaaMl-WUWts-DTnxNMfWHb7v3-yi8VLm/view?usp=shari
 
 ## Specification
 - MVVM Architecture
-- Repositary Pattern
+- Repository Pattern
 - Shared Element Transition
 - Light and Dark Theme Responsive
 - Accessibilty Service
