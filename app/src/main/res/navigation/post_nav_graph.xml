@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/post_nav_graph"
+    app:startDestination="@id/postsList">
+
+    <fragment
+        android:id="@+id/postsList"
+        android:name="com.example.innobuzzassignment.ui.PostsList"
+        android:label="PostsList" >
+        <action
+            android:id="@+id/action_postsList_to_postDetails"
+            app:destination="@id/postDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/postDetails"
+        android:name="com.example.innobuzzassignment.ui.PostDetails"
+        android:label="fragment_post_details"
+        tools:layout="@layout/fragment_post_details" >
+        <argument
+            android:name="post"
+            app:argType="com.example.innobuzzassignment.data.Room.Post" />
+    </fragment>
+</navigation>
